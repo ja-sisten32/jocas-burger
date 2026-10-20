@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joca burger</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Screenshot_5.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand marca" href="index.html">Joca burger</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="cardapio.html">Cardapio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="detalhes.html">detalhes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="cardapio-container">
+            <div class="text-center" id="der">
+                <h2>Cardapio</h2>
+            </div>
+            <div id="lista-produtos" class="d-flex justify-content-center gap-5 m-5 flex-wrap">
+                <p>Carregando cardápio...</p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row gy-4">
+
+                <div class="col-lg-5">
+                    <h5 class="fw-bold mb-3">Sobre a Joca Burger</h5>
+                    <p class="text-secondary">
+                        A Joca Burger nasceu da paixão por hambúrgueres artesanais
+                        preparados com ingredientes selecionados, combinações criativas
+                        e muito sabor. Nosso compromisso é oferecer uma experiência
+                        única, com qualidade, atendimento acolhedor e aquele burger
+                        que marca cada mordida.
+                    </p>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Localização e Contatos</h5>
+
+                    <p class="mb-2">
+                        <i class="bi bi-geo-alt-fill me-2"></i>
+                        Teresópolis/RJ
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="bi bi-telephone-fill me-2"></i>
+                        (21) 99999-9999
+                    </p>
+
+                    <p class="mb-0">
+                        <i class="bi bi-envelope-fill me-2"></i>
+                        contato@jocaburger.com.br
+                    </p>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3">Nossas Redes Sociais</h5>
+
+                    <div class="d-flex gap-3 mb-3">
+                        <a href="#" class="text-light fs-4">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" class="text-light fs-4">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" class="text-light fs-4">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+
+                    <p class="text-secondary">
+                        Aberto diariamente das 18h às 00h
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center text-secondary">
+                © 2026 Joca Burger • Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="../func/cardapio.js"></script>
+</body>
+
+</html>

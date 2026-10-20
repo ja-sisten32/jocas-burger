@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joca burger</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Screenshot_5.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand marca" href="index.html">Joca burger</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cardapio.html">Cardapio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="detalhes.html">detalhes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="contador-ofertas text-center" aria-label="Contagem regressiva das ofertas">
+            <p>As ofertas exclusivas terminam em: <span id="timer">00:00:00</span></p>
+        </section>
+
+        <div class="banner">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://imgs.search.brave.com/PYNyowWwACAb4py5bPl4yXJm4V35JRAumq3evsm8yLU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZGVsaXdheS5jb20u/YnIvYmxvZy9iYXNl/LzlkMC9jYzEvMzdl/L3RyYWRpLmpwZw"
+                            class="d-block w-100 car" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://imgs.search.brave.com/4k9f848mANdObZOlbEHrEV2qYWFqdeh5B6NjqZQihRg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZGVsaXdheS5jb20u/YnIvYmxvZy9iYXNl/L2RjNS9mNDMvY2U0/L3Bhby1jb20tY2Fy/bmUuanBn"
+                            class="d-block w-100 car" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://imgs.search.brave.com/_LEJqjEeHCJP8nix0TDCHjD9V8559CqL3eNx8Sz6JEs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NjE3NTgwMzMtZDg5/YTlhZDQ2MzMwP2Zt/PWpwZyZxPTYwJnc9/MzAwMCZhdXRvPWZv/cm1hdCZmaXQ9Y3Jv/cCZpeGxpYj1yYi00/LjEuMCZpeGlkPU0z/d3hNakEzZkRCOE1I/eHpaV0Z5WTJoOE1U/WjhmR2hoYldKMWNt/ZDFaWEo4Wlc1OE1I/eDhNSHg4ZkRBPQ"
+                            class="d-block w-100 car" alt="..." height="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="destaques">
+                <div class="txtdesta">
+                    <h2>destaques</h2>
+                </div>
+                <div id="destaques-api" class="d-flex justify-content-center gap-5 m-5 flex-wrap">
+                    <p>Carregando destaques...</p>
+                </div>
+                <div class="descricao">
+                    <h2>Sobre a Joca Burger</h2>
+                    <p>Na Joca Burger, cada hambúrguer é preparado com paixão, ingredientes selecionados e aquele
+                        cuidado que transforma uma refeição em experiência.</p>
+
+                    <p>Mais do que servir lanches, buscamos entregar sabor de verdade em cada detalhe: carnes
+                        suculentas, combinações marcantes e um preparo artesanal que respeita a qualidade de cada
+                        ingrediente. Aqui, o hambúrguer é levado a sério, desde a primeira chapa quente até a última
+                        mordida.</p>
+
+                    <p>A Joca Burger nasceu para reunir boa comida, ambiente acolhedor e momentos especiais entre amigos
+                        e família. Porque pra gente, hambúrguer bom não é só sobre matar a fome… é sobre criar vontade
+                        de voltar.</p>
+
+                    <p>
+                        Venha conhecer o sabor que conquista paladares e faz de cada visita uma experiência única.
+                        Joca Burger: onde o amor pelo hambúrguer é o ingrediente principal.
+                    </p>
+
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-5">
+            <div class="container">
+                <div class="row gy-4">
+
+                    <div class="col-lg-5">
+                        <h5 class="fw-bold mb-3">Sobre a Joca Burger</h5>
+                        <p class="text-secondary">
+                            A Joca Burger nasceu da paixão por hambúrgueres artesanais
+                            preparados com ingredientes selecionados, combinações criativas
+                            e muito sabor. Nosso compromisso é oferecer uma experiência
+                            única, com qualidade, atendimento acolhedor e aquele burger
+                            que marca cada mordida.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h5 class="fw-bold mb-3">Localização e Contatos</h5>
+
+                        <p class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            Teresópolis/RJ
+                        </p>
+
+                        <p class="mb-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            (21) 99999-9999
+                        </p>
+
+                        <p class="mb-0">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            contato@jocaburger.com.br
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <h5 class="fw-bold mb-3">Nossas Redes Sociais</h5>
+
+                        <div class="d-flex gap-3 mb-3">
+                            <a href="#" class="text-light fs-4">
+                                <i class="bi bi-instagram">ig</i>
+                            </a>
+
+                            <a href="#" class="text-light fs-4">
+                                <i class="bi bi-facebook">fb</i>
+                            </a>
+
+                            <a href="#" class="text-light fs-4">
+                                <i class="bi bi-whatsapp">wa</i>
+                            </a>
+                        </div>
+
+                        <p class="text-secondary">
+                            Aberto diariamente das 18h às 00h
+                        </p>
+                    </div>
+
+                </div>
+
+                <hr class="border-secondary my-4">
+
+                <div class="text-center text-secondary">
+                    © 2026 Joca Burger • Todos os direitos reservados.
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script src="../func/index.js"></script>
+        <script src="../func/cardapio.js"></script>
+</body>
+
+</html>

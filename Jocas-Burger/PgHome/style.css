@@ -1,0 +1,145 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: rgb(154, 123, 24);
+    --cor-secundaria: rgb(132, 27, 27);
+    --cor-texto: #000000;
+    --cor-fundo: #ffffff;
+}
+
+.cd {
+    height: 170px;
+    width: 70px;
+    object-fit: cover;
+}
+
+.car {
+    height: 400px;
+    width: 1080px;
+    object-fit: cover;
+}
+
+.marca::first-letter {
+    color: var(--cor-primaria);
+    font-size: 200%;
+}
+
+.contador-ofertas {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo);
+    padding: 12px;
+}
+
+.contador-ofertas p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.contador-ofertas span {
+    color: #ffd966;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.promo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtdesta {
+    font-size: 150%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.descricao {
+    font-size: 120%;
+    justify-content: center;
+    margin: 180px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.card:hover {
+    background-color: var(--cor-primaria);
+    scale: 1.05;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    margin-bottom: 30px;
+}
+
+h1,
+a,
+h2,
+h3 {
+    text-shadow: 2px 2px 4px rgba(115, 115, 115, 0.5);
+}
+
+.link {
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+img.setaanimacao {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .descricao {
+        margin: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .setaanimacao {
+        margin-left: 500px;
+    }
+}
+
+.setaanimacao {
+    animation: moverSeta 2s infinite;
+}
+
+@keyframes moverSeta {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
